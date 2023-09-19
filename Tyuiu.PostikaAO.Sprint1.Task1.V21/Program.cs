@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using Tyuiu.PostikaAO.Sprint1.Task0.V19.Lib;
+using Tyuiu.PostikaAO.Sprint1.Task1.V21.Lib;
 
-namespace Tyuiu.PostikaAO.Sprint1.Task0.V19
+namespace Tyuiu.PostikaAO.Sprint1.Task1.V21
 {
     class Program
     {
@@ -18,41 +18,33 @@ namespace Tyuiu.PostikaAO.Sprint1.Task0.V19
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #1                                                               *");
             Console.WriteLine("* Тема: Базовые навыки работы в C#                                        *");
-            Console.WriteLine("* Задание #0                                                              *");
-            Console.WriteLine("* Вариант 19                                                              *");
+            Console.WriteLine("* Задание #1                                                              *");
+            Console.WriteLine("* Вариант 21                                                              *");
             Console.WriteLine("* Выполнил: Постика Артём Олегович | ИИПб-23-1                            *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* Написать программу, которая вычисляет выражение 4 / 2 * 5 / (3 + 2) * 5 *");
-            Console.WriteLine("* и печатает результат на экране                                          *");
+            Console.WriteLine("* Написать программу, которая запрашивает у пользователя исходные данные, *");
+            Console.WriteLine("* вычисляет результат по формуле ( x * y ) / ( 3 + y ) и печатет его на   *");
+            Console.WriteLine("* экране                                                                  *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
-            Console.WriteLine("* 4 / 2 * 5 / (3 + 2) * 5                                                 *");
+
+            double x, y;
+
+            Console.WriteLine("Введите значение X:");
+            x = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("Введите значение Y:");
+            y = Convert.ToDouble(Console.ReadLine());
+
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Результат:                                                              *");
             Console.WriteLine("***************************************************************************");
-            Console.WriteLine(ds.Calculate());
 
-
-            int a = 10;
-
-            int b = 7;
-
-            int c = a + b;
-
-            Console.WriteLine(a + "+" + b + "=" + c);
-
-
-
-
+            Console.WriteLine(ds.Calculate(x, y));
 
             Console.ReadLine();
-
-            
-
-
-
         }
     }
 }
