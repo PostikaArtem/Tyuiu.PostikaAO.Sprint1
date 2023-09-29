@@ -12,6 +12,7 @@ namespace Tyuiu.PostikaAO.Sprint1.Task6.V3.Lib
     {
         public string LastLetterWord(string value)
         {
+
             string[] temp = value.Split(' ');  
             string res = "";
             foreach (string item in temp) 
