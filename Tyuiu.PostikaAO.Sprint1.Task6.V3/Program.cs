@@ -33,17 +33,12 @@ namespace Tyuiu.PostikaAO.Sprint1.Task6.V3
             Console.WriteLine("Введите текст:");
             string art = Console.ReadLine();
 
-
-
-
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Результат:                                                              *");
             Console.WriteLine("***************************************************************************");
 
             Console.WriteLine(ds.LastLetterWord(art));
             Console.ReadKey();
-
-
         }
     }
 }
